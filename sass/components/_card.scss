@@ -59,18 +59,18 @@
         border-top-right-radius: 3px;
 
         &--1 {
-            background-blend-mode: color-dodge;
-            background-image: linear-gradient(to right bottom, $color-blue-light, $color-primary), url(../img/eduardo.jpg);
+            background-blend-mode: hard-light;
+            background-image: linear-gradient(to right bottom, $color-blue-light, $color-primary), url(../img/management.jpg);
         }
 
         &--2 {
-            background-blend-mode: hue;
-            background-image: linear-gradient(to right bottom, $color-red-light, $color-secondary), url(../img/eric.jpg);
+            background-blend-mode: hard-light;
+            background-image: linear-gradient(to right bottom, $color-red-light, $color-secondary), url(../img/team.jpg);
         }
 
         &--3 {
             background-blend-mode: hard-light;
-            background-image: linear-gradient(to right bottom, $color-green-light, $color-tertiary), url(../img/william.jpg);
+            background-image: linear-gradient(to right bottom, $color-green-light, $color-tertiary), url(../img/voice.jpg);
         }
     }
 
@@ -112,20 +112,28 @@
 
     &__details {
         padding: 3rem;
+        padding-top: 5.5rem;
+
+        @include respond (tab-port) {
+            transform: translateY(15px);
+        }
+
+        @include respond (mobile) {
+            transform: translateY(15px);
         
-        ul {
-            list-style: none;
+        }
+        
+        p {
             width: 80%;
             margin: 0 auto;
+            text-align: center;
+            font-size: 2rem;
+            padding: 1rem;
+            &:not(:last-child) {
+            border-bottom: 1px solid $color-grey-light-2;
 
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
+                
 
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
             }
         }
     }
@@ -138,6 +146,10 @@
         transform: translate(-50%, -50%);
         width: 90%;
         text-align: center;
+        
+        @include respond (tab-port) {
+
+        }
     }
 
     &__price-box {
@@ -151,11 +163,6 @@
         font-size: 1.4rem;
         text-transform: uppercase;
 
-    }
-
-    &__price-value {
-        font-size: 6rem;
-        font-weight: 100;
     }
 
 

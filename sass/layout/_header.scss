@@ -4,7 +4,7 @@
         to right bottom,
          rgba($color-primary, 0.8),
            rgba($color-tertiary, 0.8)),
-            url(../img/hero.jpg);
+            url(../img/business.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -31,7 +31,7 @@
 
     &__logo {
         height: 15rem;
-        transition: transform .2s;
+        transition: all .2s;
 
         @include respond(mobile) {
             height:10rem;

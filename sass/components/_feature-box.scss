@@ -24,6 +24,9 @@
             margin-bottom: 0;
         }
     }
+    &__text {
+        list-style: none;
+    }
 
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);

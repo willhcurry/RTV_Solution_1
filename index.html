@@ -6,9 +6,11 @@
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/icon-font.css">
+        <!-- Comment out the stylesheet link below before build:css-->
+        <!--<link rel="stylesheet" href="css/icon-font.css">-->
+        
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+        <link rel="shortcut icon" type="image/png" href="img/logo-1x.png">
         
         <title>RTV Solutions | Transform RTVs into Opportunities</title>
     </head>
@@ -25,38 +27,38 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">Transform</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Giving you Options</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">What we do</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Meet the team</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Testimonials</a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#" class="navigation__link">Tranform </a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#options" class="navigation__link">Our Services</a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#whatwedo" class="navigation__link">Handling and Refurbishment</a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#staff" class="navigation__link">Why RTVS? </a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#testimonials" class="navigation__link">Testimonials</a></li>
                 </ul>
             </nav>
         </div>
 
         <header class='header'>
             <div class='header__logo-box'>
-                <img src='img/logo.png' alt='logo' class='header__logo'/>
+                <img src='img/logo-2x.png' alt='logo' class='header__logo'/>
             </div>
 
             <div class='header__text-box'>
                 <h1 class='heading-primary'>
                     <div class="u-center-text">
                         <span class='heading-primary--main'>Transform RTVS</span>
-                        <span class='heading-primary--sub'>into opportunities</span>
+                        <span class='heading-primary--sub'>Into Opportunities</span>
                     </div>
                 </h1>
 
-                <a href='#' class='btn btn--white btn--animated'>Contact Us</a>
+                <a href="#modal-4" class='btn btn--white btn--animated'>Contact Us</a>
             </div>
             
         </header>
 
         <main>
-            <section class="section-about">
+            <section id="options" class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                            Giving your company options
+                         What we do
                     </h2>
                 </div>
 
@@ -64,74 +66,132 @@
                     <div class='col-1-of-2'>
                         
                         <h3 class="heading-tertiary u-margin-bottom-small">
-                            Returns Handling and Refurbishing
+                                Optimize Your Online Presence 
                         </h3>
                         <p class='paragraph'>
-                            Refurbished products are processed to return to resalable open box or b-stock quality. These products can be used for warranty coverage keeping your new stock untouched for new sales orders. Additionally, refurbished products can be sold on the secondary market introduced in a carefully managed way to control the price of this market and ultimately the price of your A (new) stock. We follow the price of your A-Stock to prevent overlap which would otherwise result in pricing issues. This ensures the protection of your main business price.
+                                8 in 10 Americans are now shopping online, half of which are doing so on their mobile phone. Experts believe that by 2030 all US consumers will, in some capacity, shop online. <Strong>If you do not have a strong E-commerce presence you will be left behind.</strong> Let us help you by acting as your consulting liaison for all online marketplaces.
+                                
+                            <!-- With over 20 years of industry experience, RTV Solution offers a powerful distribution system that is custom designed to fit and grow help grow your business.  -->
                         </p>
 
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
-                        <img src="" alt="" />
+                        
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                                Return to Vendor Solutions
+                        </h3>
+                        <p class='paragraph'>
+                                As our name implies, RTV Solution helps you deal with the challenges of your company's RTVs. Storage, shipping, handling, and refurbishment are just a few of the services we offer your company's returns to minimize profit loss.
+
+                            </p>
+
+                            <a href="#modal-2" class="btn-text">Process &rarr;</a>
+    
+                            <a href="#modal-3" class="btn-text">Methodology &rarr;</a>
+                            
                     </div>
+
+                    
                     <div class='col-1-of-2'>
                         <div class="composition">
+                            
+                            <img srcset="img/refurb-1.jpg 300w, img/refurb-1-large.jpg 1000w"
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo 1"
+                                class="composition__photo composition__photo--p1"
+                                src="img/refurb-1-large.jpg">
+
+                            <img srcset="img/refurb-2.jpg 300w, img/refurb-2-large.jpg 1000w"
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo 2"
+                                class="composition__photo composition__photo--p2"
+                                src="img/refurb-2-large.jpg">
+                                
+                            <img srcset="img/refurb-3.jpg 300w, img/refurb-3-large.jpg 1000w"
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo 3"
+                                class="composition__photo composition__photo--p3"
+                                src="img/refurb-3-large.jpg">    
+                            
+                            <!--
                             <img src="img/refurb-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                             <img src="img/refurb-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
                             <img src="img/refurb-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            -->
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-features">
+            <!-- Handling and Refurbishing Details -->
+            <section id="whatwedo" class="section-features">
 
                 <div class="row">
-                    <div class="col-1-of-4">
+                    <div class="col-1-of-3">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Fulfillment</h3>
-                            <p class="feature-box__text">
-                                Fulfillment. E-Commerce Fulfillment. WMS System Integration. Transportation. Freight Consulting. UPC Barcode Printing. QA / QC
-                            </p>
+                                <ul class="feature-box__text">
+                                    <li>Fulfillment</li>
+                                    <li>E-Commerce Fulfillment</li>
+                                    <li>WMS System Integration</li>
+                                    <li>Transportation</li>
+                                    <li>Freight Consulting</li>
+                                    <li>UPC Barcode Printing</li>
+                                    <li>QA / QC</li>
+                                </ul>
                         </div>
                     </div>
 
-                    <div class="col-1-of-4">
+                    <!-- <div class="col-1-of-">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-trashcan-refresh"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Handling</h3>
-                            <p class="feature-box__text">
+                            <p class="feature-box__text-list">
                                 Returns are prepared to the specifications of the manufacturer for full credit. Certified destruction and disposal to state regulation to avoid cradle-to-grave laws.
                             </p>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col-1-of-4">
+                    
+                    <div class="col-1-of-3">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-home"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Warehousing</h3>
-                            <p class="feature-box__text">
-                                Storing. Re-Stickering. Packaging / Repackaging. Loading / Unloading. Cross Docking. Inventory Management. Poly Bundling.
-                            </p>
+                                <ul class="feature-box__text">
+                                
+                                    <li>Storing</li>
+                                    <li>Re-Stickering</li>
+                                    <li>Packaging / Repackaging</li>
+                                    <li>Loading / Unloading</li>
+                                    <li>Cross Docking</li>
+                                    <li>Inventory Management</li>
+                                    <li>Poly Bundling</li>
+                                </ul>
                         </div>
                     </div>
 
-                    <div class="col-1-of-4">
+                    <div class="col-1-of-3">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-joypad"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Special Projects</h3>
-                            <p class="feature-box__text">
-                                Recertification. Light Assembly. Kitting Services. PDQ Trays/Displays and End Caps. Club Packs ( Sams/Costco ). Flashing/Firmware Updates.
-                            </p>
+                                <ul class="feature-box__text">
+                                    <li>Testing</li>
+                                    <li>Recertification</li>
+                                    <li>Light Assembly</li>
+                                    <li>Kitting Services</li>
+                                    <li>PDQ Displays</li>
+                                    <li>Club Packs ( Sams / Costco )</li>
+                                    <li>Flashing / Firmware Updates</li>
+                                </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-staff">
+            <section id="staff" class="section-staff">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        Meet the Team
+                        Why Choose RTVS?
                     </h2>
                 </div>
 
@@ -144,25 +204,20 @@
                                     &nbsp;
                                 </div>
                                 <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--1">Eduardo <br> Perez</span>
+                                    <span class="card__heading-span card__heading-span--1">Account Management</span>
                                 </h4>
                                 <div class="card__details">
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                    </ul>>
+                                    <p>
+                                        We customize our services to fit your business needs with full-scale marketing account management.
+                                    </p>
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-1">
                                 <div class="card__cta">
                                     <div class="card__price-box">
-                                        <p class="card__price-only">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                        <p class="card__price-value">$879</p>
+                                        <p class="card__price-only">Storefront or website not getting enough traffic? Let our Google Certified team help with Amazon Marketing Services, Search Engine Optimization, and Search Marketing. With these powerful tools we can increase the chance of your website appearing at the top of google searches. Not only do increased views equal increased sales but they also bring more awareness and trust to your brand.</p>
                                     </div>
-                                    <a href="#modal" class="btn btn--white">More</a>
+                                    <a href="#modal-4" class="btn btn--white">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -175,25 +230,19 @@
                                     &nbsp;
                                 </div>
                                 <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">Eric <br> Curry</span>
+                                    <span class="card__heading-span card__heading-span--2">Dedicated Team of Experts</span>
                                 </h4>
                                 <div class="card__details">
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                    </ul>>
+                                    <p>Our teams come together and develop the ideal launch plans to deliver your desired results.</p>
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-2">
                                 <div class="card__cta">
                                     <div class="card__price-box">
-                                        <p class="card__price-only">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                        <p class="card__price-value">$879</p>
+                                        <p class="card__price-only">Here at RTVS we have a diverse team with over 20 years of experience. Let our team of online marketplace veterans, Vendor Central and Seller Central account managers, consumer electronics and multinational brand experts help you.
+                                            </p>
                                     </div>
-                                    <a href="#modal" class="btn btn--white">More</a>
+                                    <a href="#modal-4" class="btn btn--white">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -206,25 +255,18 @@
                                     &nbsp;
                                 </div>
                                 <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3">William <br> Curry</span>
+                                    <span class="card__heading-span card__heading-span--3">Reverse <br> Logistics</span>
                                 </h4>
                                 <div class="card__details">
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                    </ul>>
+                                    <p>RTV Solution offers a powerful, custom designed distribution system to handle the challenges of RTV.</p>
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-3">
                                 <div class="card__cta">
                                     <div class="card__price-box">
-                                        <p class="card__price-only">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                        <p class="card__price-value">$879</p>
+                                        <p class="card__price-only">We have a full warehouse and operations team ready to receive, store, refurbish, and ship inventory. Many of our clients never have to deal with their inventory directly which replaces the need to hire your own in-house teams. No business is too big or too small.</p>
                                     </div>
-                                    <a href="#modal" class="btn btn--white">Win!</a>
+                                    <a href="#modal-4" class="btn btn--white">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -232,12 +274,12 @@
                 </div>
 
                 <div class="u-center-text u-margin-top-large">
-                    <a href="#modal" class="btn btn--blue">Discover</a>
+                    <a href="#modal-4" class="btn btn--blue">Contact</a>
                 </div>
                 
 
             </section>
-                <section class="section-stories">
+                <section id="testimonials" class="section-stories">
                     <div class="bg-video">
                         <video class="bg-video__content" autoplay muted loop>
                             <source src="img/video.mp4" type="video/mp4">
@@ -256,11 +298,11 @@
                         <div class="story">
                             <figure class="story__shape">
                                 <img src="img/client-1.jpg" class="story__img" alt="Happy Man">
-                                <figcaption class="story__caption">Jamal DeAndre</figcaption>
+                                <figcaption class="story__caption">John Alterman</figcaption>
                             </figure>
                             <div class="story__text">
-                                <h3 class="heading-tertiary u-margin-bottom-small">"Lorem ipsum dolor sit amet, consectetur adipiscing elit!"</h3>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+                                <h3 class="heading-tertiary u-margin-bottom-small">"They really know what they're doing."</h3>
+                                <p>"RTVS solves numerous problems we previously had to spend an onbscene amount of money to handle. RTV Solution took care of everything for me so I didn't have to. Profit losses are down by over 30% and they're handling our inventory in ways we couldn't."</p>
                             </div>
                         </div>
                     </div>
@@ -272,19 +314,20 @@
                                 <figcaption class="story__caption">Molly Thompson</figcaption>
                             </figure>
                             <div class="story__text">
-                                <h3 class="heading-tertiary u-margin-bottom-small">"Lorem ipsum dolor sit amet, consectetur adipiscing elit!"</h3>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+                                <h3 class="heading-tertiary u-margin-bottom-small">"What a surprise!"</h3>
+                                <p>"As a small business owner I had no idea how much I was missing out by not having my business online. Eric was excellent in explaining to me every detail possible. My customer base has increased ten-fold and we've only begun. I have a great outlook on the future of my company!"</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="u-center-text u-margin-top-large">
+                    <!--<div class="u-center-text u-margin-top-large">
                         <a href="#modal" class="btn-text">More &rarr;</a>
-                    </div>
+                    </div>-->
 
                 </section>
 
-                <section class="section-book">
+                <!--
+                    <section class="section-book">
                     <div class="row">
                         <div class="book">
                             <div class="book__form">
@@ -307,29 +350,39 @@
                         </div>
                     </div>
                 </section>
+                -->
         </main>
         
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo.png" alt="Full logo" class="footer__logo">
+
+                <picture class="footer__logo">
+                    <img srcset="img/logo-1x.png 1x, img/logo-2x.png 2x" alt="RTVS logo" src="img/logo-2x.png">
+                </picture>
+
+                
             </div>
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="" class="footer__link">Contact Us</a></li>
+                            <li class="footer__item" id=""><a href="" class="footer__link">Contact Us</a></li>
+                            <li class="footer__item" id=""><a href="" class="footer__link">Telephone: 909-665-9771</a></li>
+                            <li class="footer__item" id=""><a href="" class="footer__link">Email: info@rtvsolution.com</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-1-of-2">
-                    <p class="footer__copywright">
-                        Copyright &copy; 2018 RTV Solution. All rights reserved.
+                    <p class="footer__copyright">
+                        Copyright &copy; 2019 RTV Solution. All rights reserved.
                     </p>
                 </div>
             </div>
         </footer>
 
-        <div class="modal" id="modal">
+
+        <!-- Modal windows-->
+        <!--<div class="modal" id="modal">
             <div class="modal__content">
                 <div class="modal__left">
                     <img src="img/product-1.jpg" alt="Store products" class="modal__img">
@@ -337,15 +390,48 @@
                 </div>
                 <div class="modal__right">
                     <a href="#section-staff" class="modal__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-small">Start saving now</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read the terms below</h3>
+                    <h2 class="heading-secondary u-margin-bottom-small">Maximizing Your Online Presence</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">RTV handling and refurbishing</h3>
                     <p class="modal__text">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        Refurbished products are processed to return to resalable open box or b-stock quality. These products can be used for warranty coverage keeping your new stock untouched for new sales orders. Additionally, refurbished products can be sold on the secondary market introduced in a carefully managed way to control the price of this market and ultimately the price of your A (new) stock. We follow the price of your A-Stock to prevent overlap which would otherwise result in pricing issues. This ensures the protection of your main business price.
                     </p>
                     <a href="#" class="btn btn--blue">Contact Us Now</a>
                 </div>
             </div>
+        </div>-->
+
+        <div class="modal-2" id="modal-2">
+            <div class="modal-2__content">
+                <img src="img/cycle-chart.jpg" alt="Product Cycle Chart" class="modal-2__img">
+                <a href="#options" class="modal__close">&times;</a>
+            </div>
         </div>
+
+        <div class="modal-3" id="modal-3">
+            <div class="modal-3__content">
+                <img src="img/methodology.jpg" alt="Product Methodology" class="modal-3__img">
+                <a href="#options" class="modal__close">&times;</a>
+            </div>
+        </div>
+
+        <div class="modal-4" id="modal-4">
+            <div class="modal-4__content">
+                    <div class="modal-4__left">
+                            <img src="img/CEO.jpg" alt="CEO" class="modal-4__img">
+                            <!---->
+                            <img src="img/M-Director.jpg" alt="Marketing Director" class="modal-4__img">
+                        </div>
+                        <div class="modal-4__right">
+                            <a href="#section-staff" class="modal-4__close">&times;</a>
+                            <h2 class="heading-secondary heading-secondary__modal u-margin-bottom-small">Telephone: 909-665-9771</h2>
+                            <h3 class="heading-secondary heading-secondary__modal u-margin-bottom-small">Email: info@rtvsolution.com</h3>
+                            <p class="modal-4__text">
+                                    Call or email us for more information.<br> We're here for you!
+                            </p>
+                        </div>
+            </div>
+        </div>
+    
 
 
 
@@ -423,4 +509,6 @@
         -->
 
     </body>
+
+    <script type="text/JavaScript" src="scripts/script.js"></script>
 </html>
