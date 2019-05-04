@@ -29,11 +29,11 @@
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-red-light, $color-secondary);
+                background-image: linear-gradient(to right bottom, $color-green-light, $color-tertiary);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-green-light, $color-tertiary);
+                background-image: linear-gradient(to right bottom, $color-red-light, $color-secondary);
             }
         }
     }
@@ -65,12 +65,12 @@
 
         &--2 {
             background-blend-mode: hard-light;
-            background-image: linear-gradient(to right bottom, $color-red-light, $color-secondary), url(../img/team.jpg);
+            background-image: linear-gradient(to right bottom, $color-green-light, $color-tertiary), url(../img/team.jpg);
         }
 
         &--3 {
             background-blend-mode: hard-light;
-            background-image: linear-gradient(to right bottom, $color-green-light, $color-tertiary), url(../img/voice.jpg);
+            background-image: linear-gradient(to right bottom, $color-red-light, $color-secondary), url(../img/voice.jpg);
         }
     }
 
@@ -99,14 +99,14 @@
 
         &--2 {
             background-image: linear-gradient(to right bottom,
-            rgba($color-red-light, .85),
-            rgba($color-secondary, .85));
+            rgba($color-green-light, .85),
+            rgba($color-tertiary, .85));
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom,
-            rgba($color-green-light, .85),
-            rgba($color-tertiary, .85));
+            rgba($color-red-light, .85),
+            rgba($color-secondary, .85));
         }
     }
 
